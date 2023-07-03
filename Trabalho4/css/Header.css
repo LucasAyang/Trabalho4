@@ -1,0 +1,13 @@
+header {
+    background: linear-gradient(to right, #EC3053, #FF8B8B);
+    color: #fff;
+    padding: 70px;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}

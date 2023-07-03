@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genzai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body>
+    <main>
+        <!-- Esté o código do Cabeçalho apenas contendo o nome do site-->
+        <header>
+            <h1>Genzai</h1>
+        </header>
+        <!-- Esté o código do menu contendo os itens do menu e deixando ele acompanhando o usuário a medida que usa a página -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Genzai</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Este é o código do carrosel de imagens, dos botões e dos números que ficam abaixos para pular entre as imagens -->
+        <section id="carrossel">
+            <h2>Top Manga</h2>
+            <div class="card-deck flex-column">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/shingeki-no-kyojin.jpg" class="d-block w-100" alt="Shingeki no Kyojin"
+                                loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/kimetsu-no-yaiba.jpg" class="d-block w-100" alt="Kimetsu no Yaiba"
+                                loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/one-piece.jpg" class="d-block w-100" alt="One Piece" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/boku-no-hero.jpg" class="d-block w-100" alt="Boku no Hero" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/chainsaw-man.jpg" class="d-block w-100" alt="Chainsaw Man" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vinland-saga.jpg" class="d-block w-100" alt="Vinland Saga" loading="lazy">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- Este é o código da galeria, definindo as imagens e a disposição delas na tela, também linkando ao modal -->
+        <section id="galeria">
+            <div class="card-deck flex-column">
+                <div class="card-deck">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <a href="#modalFoto1" data-bs-toggle="modal" data-bs-target="#modalFoto1">
+                                    <img src="img/shingeki-no-kyojin.jpg" class="card-img-top custom-img"
+                                        alt="Shingeki no Kyojin">
+                                    <div class="card-overlay"></div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="card-text-container">
+                                        <h5 class="card-title">Shingeki no Kyojin</h5>
+                                        <p class="card-text">Edição: Volume 34<br>Preço: R$ 47.40</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <a href="#modalFoto2" data-bs-toggle="modal" data-bs-target="#modalFoto2">
+                                    <img src="img/kimetsu-no-yaiba.jpg" class="card-img-top custom-img"
+                                        alt="Kimetsu no Yaiba">
+                                    <div class="card-overlay"></div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="card-text-container">
+                                        <h5 class="card-title">Kimetsu no Yaiba</h5>
+                                        <p class="card-text">Edição: Volume 23<br>Preço: R$ 34.90</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <a href="#modalFoto3" data-bs-toggle="modal" data-bs-target="#modalFoto3">
+                                    <img src="img/one-piece.jpg" class="card-img-top custom-img" alt="One Piece">
+                                    <div class="card-overlay"></div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="card-text-container">
+                                        <h5 class="card-title">One Piece</h5>
+                                        <p class="card-text">Edição: Volume 103<br>Preço: R$ 52.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <a href="#modalFoto4" data-bs-toggle="modal" data-bs-target="#modalFoto4">
+                                    <img src="img/boku-no-hero.jpg" class="card-img-top custom-img" alt="Boku no Hero">
+                                    <div class="card-overlay"></div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="card-text-container">
+                                        <h5 class="card-title">Boku no Hero</h5>
+                                        <p class="card-text">Edição: Volume 34<br>Preço: R$ 27.90</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <a href="#modalFoto5" data-bs-toggle="modal" data-bs-target="#modalFoto5">
+                                    <img src="img/chainsaw-man.jpg" class="card-img-top custom-img" alt="Chainsaw Man">
+                                    <div class="card-overlay"></div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="card-text-container">
+                                        <h5 class="card-title">Chainsaw Man</h5>
+                                        <p class="card-text">Edição: Volume 11<br>Preço: R$ 24.20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <a href="#modalFoto6" data-bs-toggle="modal" data-bs-target="#modalFoto6">
+                                    <img src="img/vinland-saga.jpg" class="card-img-top custom-img" alt="Vinald Saga">
+                                    <div class="card-overlay"></div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="card-text-container">
+                                        <h5 class="card-title">Vinald Saga</h5>
+                                        <p class="card-text">Edição: Volume 13<br>Preço: R$ 61.29</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Esté o modal para que as imagens fiquem maior quando clica nelas -->
+        <div class="modal fade" id="modalFoto1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/shingeki-no-kyojin.jpg" class="w-100" alt="Shingeki no Kyojin">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalFoto2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/kimetsu-no-yaiba.jpg" class="w-100" alt="Kimetsu no Yaiba">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalFoto3" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/one-piece.jpg" class="w-100" alt="One Piece">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalFoto4" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/boku-no-hero.jpg" class="w-100" alt="Shingeki no Kyojin">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalFoto5" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/chainsaw-man.jpg" class="w-100" alt="Shingeki no Kyojin">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalFoto6" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/vinland-saga.jpg" class="w-100" alt="Vinland Saga">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Está e a tabela -->
+        <section id="tabela">
+            <h2>Valores e volumes dos Top Manga</h2>
+            <div class="card-deck flex-column">
+                <table class="table table-striped custom-table custom-table-bg">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Volume</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Shingeki no Kyojin</td>
+                            <td>34</td>
+                            <td>R$ 47.40</td>
+                        </tr>
+                        <tr>
+                            <td>Kimetsu no Yaiba</td>
+                            <td>23</td>
+                            <td>R$ 34.90</td>
+                        </tr>
+                        <tr>
+                            <td>One Piece</td>
+                            <td>103</td>
+                            <td>R$ 52.00</td>
+                        </tr>
+                        <tr>
+                            <td>Boku no Hero</td>
+                            <td>34</td>
+                            <td>R$ 27.90</td>
+                        </tr>
+                        <tr>
+                            <td>Chainsaw Man</td>
+                            <td>11</td>
+                            <td>R$ 24.20</td>
+                        </tr>
+                        <tr>
+                            <td>Vinland Saga</td>
+                            <td>13</td>
+                            <td>R$ 61.29</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- Este é o rodapé -->
+        <footer>
+            <div>
+                <p>Endereço: Rua Jockey Club, 218 - Rio Grande - RS</p>
+                <p>Telefone: (53) 98135-8115</p>
+                <p>E-mail: contato@genzai.com.br</p>
+            </div>
+            &copy; 2023 Genzai. Todos os direitos reservados.
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
+</html>

@@ -1,0 +1,52 @@
+main {
+    padding: 20px;
+    background-color: #ffeeeb;
+}
+
+.carousel-item img,
+.card-img-top.custom-img {
+    max-width: 300px; 
+    max-height: 450px; 
+    width: auto;
+    height: auto;
+}
+
+
+.card {
+    background-color: transparent;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-text-container {
+    position: relative;
+    z-index: 1;
+    color: #381d14;
+    padding: 10px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.table.custom-table-bg {
+    background-color: #ffeeeb;
+}
